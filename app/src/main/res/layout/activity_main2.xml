@@ -136,13 +136,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="10dp"></LinearLayout>
+
         <LinearLayout
             android:id="@+id/main2_ioItem"
             android:layout_width="match_parent"
             android:layout_height="70dp"
+            android:layout_marginHorizontal="16dp"
             android:background="@drawable/roundedbox_ripple"
-            android:orientation="vertical"
-            android:layout_marginHorizontal="16dp">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -150,6 +151,28 @@
                 android:paddingLeft="25dp"
                 android:paddingTop="20dp"
                 android:text="입고/출고"
+                android:textColor="#000000"
+                android:textSize="20dp"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main2_storageMap"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/roundedbox_ripple"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:paddingTop="20dp"
+                android:text=""
                 android:textColor="#000000"
                 android:textSize="20dp"></TextView>
 
