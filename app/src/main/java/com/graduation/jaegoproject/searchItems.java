@@ -1,5 +1,6 @@
 package com.graduation.jaegoproject;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -7,13 +8,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
+
+import com.google.zxing.integration.android.IntentIntegrator;
+import com.google.zxing.integration.android.IntentResult;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class searchItems extends AppCompatActivity {
     EditText itemList_edt;
+    ImageButton search_items_barcodeScan_btn;
     private ListView search_items_itemListView;
     private ItemListAdapter adapter;
     private List<Products> itemList;
@@ -55,6 +61,5 @@ public class searchItems extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 }

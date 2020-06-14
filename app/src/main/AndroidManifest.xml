@@ -14,12 +14,13 @@
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="재고파인더"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-        <activity android:name=".itemInformation"></activity>
+        <activity android:name=".updateItem"></activity>
+        <activity android:name=".itemInformation" />
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"
