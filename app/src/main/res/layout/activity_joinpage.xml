@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D5D1D1"
+    tools:context=".Joinpage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="회원가입"
+        android:gravity="center"
+        android:textSize="45dp"
+        android:textColor="#000000"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/join_id"
+            android:hint="아이디"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/join_password"
+            android:hint="비밀번호"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/join_name"
+            android:hint="이름"
+            android:textColor="#000000"
+            android:textColorHint="#000000" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/roundedbox_ripple"
+            android:id="@+id/join_submit"
+            android:text="회원가입"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:textSize="20dp"></Button>
+    </LinearLayout>
+</LinearLayout>
