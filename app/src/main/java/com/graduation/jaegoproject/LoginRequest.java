@@ -8,7 +8,7 @@ import com.android.volley.AuthFailureError;
 import java.util.Map;
 
 public class LoginRequest extends StringRequest {
-    final static private String URL= "http://192.168.0.9:80/login.php";/*"http://59.15.191.179:80/login.php";*/
+    final static private String URL= "http://192.168.0.9:80/login.php";
     private Map<String, String> parameters;
 
     public LoginRequest(String u_id,String u_pwd, Response.Listener<String> listener){
