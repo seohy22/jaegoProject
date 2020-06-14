@@ -14,8 +14,8 @@ public class Products {
     {
         this.p_no = p_no; this.u_id =u_id; this.p_code = p_code;this.p_name = p_name; this.p_category = p_category; this.p_size = p_size; this.p_ea = p_ea; this.s_name = s_name;
     }
-    public Products(String p_name,String p_code,String p_category,String s_name,String p_ea){
-        this.p_name = p_name; this.p_category = p_category; this.p_code = p_code; this.s_name = s_name; this.p_ea = p_ea;
+    public Products(String p_name,String p_code,String p_category,String p_size,String s_name,String p_ea){
+        this.p_name = p_name; this.p_category = p_category; this.p_size = p_size; this.p_code = p_code; this.s_name = s_name; this.p_ea = p_ea;
     }
 
     public String getP_no() {return p_no; }

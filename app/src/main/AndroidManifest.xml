@@ -5,12 +5,12 @@
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <application
 
+    <application
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,8 +19,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
-        <meta-data android:name="com.kakao.sdk.AppKey" android:value="aa573d8c6c5c255898cc16469468bb1a"/>
-        <activity android:name=".storageMap"></activity>
+        <activity android:name=".itemInformation"></activity>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="aa573d8c6c5c255898cc16469468bb1a" />
+
+        <activity android:name=".storageMap" />
         <activity android:name=".insertItems" />
         <activity android:name=".tests" />
         <activity android:name=".Joinpage" />
@@ -35,4 +40,5 @@
             </intent-filter>
         </activity>
     </application>
+
 </manifest>

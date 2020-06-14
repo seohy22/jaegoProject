@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#D5D1D1"
     android:orientation="vertical"
-    tools:context=".insertItems">
+    tools:context=".itemInformation">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:text="제품 등록"
+            android:text="제품 정보"
             android:textColor="#000000"
             android:textSize="20dp" />
     </LinearLayout>
@@ -33,7 +33,18 @@
         android:layout_height="match_parent"
         android:layout_marginTop="30dp"
         android:orientation="vertical">
-
+        <LinearLayout
+            android:id="@+id/item_information_updateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginHorizontal="16dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="수정"
+                android:textColor="#000000"></TextView>
+        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="318dp"
@@ -62,12 +73,12 @@
                         android:layout_width="30dp"
                         android:layout_height="match_parent" />
 
-                    <EditText
-                        android:id="@+id/insertItem_pcodeEdt"
+                    <TextView
+                        android:id="@+id/item_information_pcodeTv"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:cursorVisible="false"
-                        android:hint="제품번호을 입력해주세요."
+                        android:gravity="center"
+                        android:textSize="18dp"
                         android:textColor="#000000"
                         android:textColorHint="#787878" />
                 </LinearLayout>
@@ -88,12 +99,12 @@
                         android:layout_width="30dp"
                         android:layout_height="match_parent" />
 
-                    <EditText
-                        android:id="@+id/insertItem_pnameEdt"
+                    <TextView
+                        android:id="@+id/item_information_pnameTv"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:cursorVisible="false"
-                        android:hint="제품명을 입력해주세요."
+                        android:gravity="center"
+                        android:textSize="18dp"
                         android:textColor="#000000"
                         android:textColorHint="#787878" />
                 </LinearLayout>
@@ -114,12 +125,12 @@
                         android:layout_width="30dp"
                         android:layout_height="match_parent" />
 
-                    <EditText
-                        android:id="@+id/insertItem_pcategoryEdt"
+                    <TextView
+                        android:id="@+id/item_information_pcategoryTv"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:cursorVisible="false"
-                        android:hint="카테고리를 입력해주세요."
+                        android:gravity="center"
+                        android:textSize="18dp"
                         android:textColor="#000000"
                         android:textColorHint="#787878" />
                 </LinearLayout>
@@ -140,12 +151,12 @@
                         android:layout_width="30dp"
                         android:layout_height="match_parent" />
 
-                    <EditText
-                        android:id="@+id/insertItem_psizeEdt"
+                    <TextView
+                        android:id="@+id/item_information_psizeTv"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:cursorVisible="false"
-                        android:hint="규격을 입력해주세요."
+                        android:gravity="center"
+                        android:textSize="18dp"
                         android:textColor="#000000"
                         android:textColorHint="#787878" />
                 </LinearLayout>
@@ -166,12 +177,12 @@
                         android:layout_width="30dp"
                         android:layout_height="match_parent" />
 
-                    <EditText
-                        android:id="@+id/insertItem_peaEdt"
+                    <TextView
+                        android:id="@+id/item_information_peaTv"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:cursorVisible="false"
-                        android:hint="수량을 입력해주세요."
+                        android:gravity="center"
+                        android:textSize="18dp"
                         android:textColor="#000000"
                         android:textColorHint="#787878" />
                 </LinearLayout>
@@ -192,26 +203,27 @@
                         android:layout_width="30dp"
                         android:layout_height="match_parent" />
 
-                    <EditText
-                        android:id="@+id/insertItem_sNameSpin"
+                    <TextView
+                        android:id="@+id/item_information_snameTv"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:hint="보관장소를 입력해주세요."
+                        android:gravity="center"
+                        android:textSize="18dp"
                         android:textColor="#000000"
-                        android:textColorHint="#787878"></EditText>
+                        android:textColorHint="#787878" ></TextView>
                 </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
 
         <Button
-            android:id="@+id/insertItem_insertBtn"
+            android:id="@+id/item_information_btnOk"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_gravity="center"
             android:layout_marginHorizontal="16dp"
             android:background="@drawable/roundedbox_ripple"
-            android:text="등록"
+            android:text="확인"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="20dp"></Button>

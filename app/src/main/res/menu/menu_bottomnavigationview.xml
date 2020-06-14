@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/insertItem"
-        android:icon="@android:drawable/ic_menu_search"
-        android:title="재고목록"/>
+        android:id="@+id/tab1"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="홈"
+        />
     <item
-        android:id="@+id/searchItems"
+        android:id="@+id/tab2"
         android:icon="@android:drawable/ic_menu_search"
-        android:title="창고"/>
+        android:title="제품"/>
     <item
-        android:id="@+id/test"
-        android:icon="@android:drawable/ic_menu_search"
-        android:title="제품등록"/>
+        android:id="@+id/tab3"
+        android:icon="@android:drawable/ic_dialog_map"
+        android:title="창고" />
 </menu>

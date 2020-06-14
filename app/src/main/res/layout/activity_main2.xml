@@ -1,182 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D5D1D1"
+    android:orientation="vertical"
     android:scrollbars="none"
     tools:context=".Main2Activity">
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/main2_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginBottom="?attr/actionBarSize"
+        >
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="match_parent"
+            android:background="#D5D1D1"
+            android:scrollbars="none">
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#ffffff"
-                android:gravity="center"
-                android:text="재고파인더"
-                android:textColor="#AA6100"
-                android:textSize="30dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/nowItemsList"
-            android:layout_width="match_parent"
-            android:layout_height="94dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:layout_marginHorizontal="16dp"
-            android:background="@drawable/roundedbox_ripple"
-            android:gravity="center">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingRight="20dp">
-
-                <TextView
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="총 재고 "
-                    android:textColor="#000000"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="0000"
-                    android:textColor="#020202"
-                    android:textSize="25dp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
                 android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="재고 부족"
-                    android:textColor="#000000"
-                    android:textSize="20dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                <LinearLayout
+                    android:id="@+id/nowItemsList"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
                     android:layout_gravity="center"
-                    android:text="0000"
-                    android:textColor="#EEFF0000"
-                    android:textSize="25dp" />
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/roundedbox_ripple"
+                    android:gravity="center">
 
+                    <LinearLayout
+                        android:id="@+id/main2_totalItems"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingRight="20dp">
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="총 재고 "
+                            android:textColor="#000000"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:id="@+id/main2_totalItemsText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="0000"
+                            android:textColor="#020202"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/main2_warningItems"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="재고 부족"
+                            android:textColor="#000000"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:id="@+id/main2_warningItemsText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="0000"
+                            android:textColor="#EEFF0000"
+                            android:textSize="25dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/searchItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/roundedbox_ripple"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="20dp"
+                        android:text="제품검색"
+                        android:textColor="#000000"
+                        android:textSize="20dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main2_insertItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/roundedbox_ripple"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="20dp"
+                        android:text="제품등록"
+                        android:textColor="#000000"
+                        android:textSize="20dp"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"></LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/main2_storageMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:background="@drawable/roundedbox_ripple"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:paddingTop="20dp"
+                        android:text="위치"
+                        android:textColor="#000000"
+                        android:textSize="20dp"></TextView>
+
+                </LinearLayout>
             </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
 
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp"></LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/searchItem"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@drawable/roundedbox_ripple"
-            android:orientation="vertical"
-            android:layout_marginHorizontal="16dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="25dp"
-                android:paddingTop="20dp"
-                android:text="제품검색"
-                android:textColor="#000000"
-                android:textSize="20dp"></TextView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp"></LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/main2_insertItem"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@drawable/roundedbox_ripple"
-            android:orientation="vertical"
-            android:layout_marginHorizontal="16dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="25dp"
-                android:paddingTop="20dp"
-                android:text="제품등록"
-                android:textColor="#000000"
-                android:textSize="20dp"></TextView>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp"></LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/main2_ioItem"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginHorizontal="16dp"
-            android:background="@drawable/roundedbox_ripple"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="25dp"
-                android:paddingTop="20dp"
-                android:text="입고/출고"
-                android:textColor="#000000"
-                android:textSize="20dp"></TextView>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp"></LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/main2_storageMap"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginHorizontal="16dp"
-            android:background="@drawable/roundedbox_ripple"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="25dp"
-                android:paddingTop="20dp"
-                android:text=""
-                android:textColor="#000000"
-                android:textSize="20dp"></TextView>
-
-        </LinearLayout>
-    </LinearLayout>
-
-</ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/menu_bottomnavigationview" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
