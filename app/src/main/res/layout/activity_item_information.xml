@@ -42,7 +42,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="수정"
+                android:text="정보수정"
                 android:textColor="#000000"></TextView>
         </LinearLayout>
         <LinearLayout

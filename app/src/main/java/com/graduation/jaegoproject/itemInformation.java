@@ -6,12 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class itemInformation extends AppCompatActivity {
     TextView item_information_pcodeTv,item_information_pnameTv,item_information_pcategoryTv,item_information_psizeTv,
             item_information_peaTv,item_information_snameTv;
     Button item_information_btnOk;
+    LinearLayout item_information_updateBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +50,23 @@ public class itemInformation extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+        //수정을 눌렀을 경우 update 화면으로 넘어간다.
+        item_information_updateBtn = findViewById(R.id.item_information_updateBtn);
+        item_information_updateBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),updateItem.class);
+                intent.putExtra("p_name",item_information_pnameTv.getText().toString());
+                intent.putExtra("p_code",item_information_pcodeTv.getText().toString());
+                intent.putExtra("p_category",item_information_pcategoryTv.getText().toString());
+                intent.putExtra("p_size",item_information_psizeTv.getText().toString());
+                intent.putExtra("s_name",item_information_snameTv.getText().toString());
+                intent.putExtra("p_ea",item_information_peaTv.getText().toString());
+                startActivity(intent);
+
             }
         });
     }
